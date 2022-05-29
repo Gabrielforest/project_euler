@@ -16,3 +16,22 @@ for ( i in nLattice:1 ) {
   }
 }
 lattice[ 1, 1 ]
+
+# or simply
+factorial <- function( n ) { 
+  if ( n < 0 ) {
+    stop("factorial operation does not exist for negative numbers")
+  } else if ( is.na(suppressWarnings(as.numeric( n )))) {
+    warning("factorial operation requires a number")
+  } else if ( n == 0 ) {
+    1
+  } else if ( n > 0 ) {
+    factorial = 1
+    for ( i in 1:n ) {
+      factorial = factorial * i 
+    }
+    factorial
+  }
+}
+nlaticce <- function( n ) { factorial( n * 2 ) / ( factorial( n ) * factorial( n ) ) }
+nlaticce( 20 )
