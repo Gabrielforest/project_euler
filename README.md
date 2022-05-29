@@ -5,6 +5,7 @@ Solve history:
 
 | Problems  |   Date    |
 | --------- | --------- |
+| 016:      | 29 May 22 |
 | 015:      | 29 May 22 |
 | 014:      | 13 May 22 |
 | 013:      | 12 May 22 |
