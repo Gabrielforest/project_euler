@@ -16,13 +16,12 @@ for ( i in nLattice:1 ) {
   }
 }
 lattice[ 1, 1 ]
-
 # or simply
 factorial <- function( n ) { 
   if ( n < 0 ) {
-    stop("factorial operation does not exist for negative numbers")
-  } else if ( is.na(suppressWarnings(as.numeric( n )))) {
-    warning("factorial operation requires a number")
+    stop( "factorial operation does not exist for negative numbers" )
+  } else if ( is.na( suppressWarnings ( as.numeric( n ) ) ) ) {
+    warning( "factorial operation requires a number" )
   } else if ( n == 0 ) {
     1
   } else if ( n > 0 ) {
