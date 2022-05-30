@@ -13,9 +13,6 @@
 # compliance with British usage.
 
 function total_letters( n::Int64 )
-  v = Array{ String }( undef, n )
-  for i in 1:n
-    v[ i ] = SpelledOut.spelled_out( i, lang = :en_UK )
-  end
+  v = [ SpelledOut.spelled_out( i, lang = :en_UK ) for i in 1:n ]
   sum( length.( v ) ) - ( sum( count.( " ", v ) ) + sum( count.( "-", v ) ) )
 end
